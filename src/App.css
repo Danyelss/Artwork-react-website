@@ -17,6 +17,7 @@
 
 
 .splitScreen {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -59,7 +60,7 @@
 }
 
 .box {
-    height: 93vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -72,7 +73,7 @@
 }
 
 .textcenter {
-    height: 30vh;
+    height: 30vh; /* box for text centering */
 }
 
 .header {
@@ -80,3 +81,12 @@
     height: 7vh;
     text-align: center;
 }
+
+.zoom {
+    transition: transform .1s; /* Animation */
+  }
+  
+  .zoom:hover { 
+    cursor: pointer;  /* change cursor */
+    transform: scale(1.2); /* increase size */
+  }
