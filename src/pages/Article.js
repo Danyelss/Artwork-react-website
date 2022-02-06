@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-const HeaderComponent = () => {
+const ArticlePage = () => {
   return (
     <div>
-       <h1>This is a header</h1>
+        <p>Mihai pop Onar</p>
     </div>
   );
 }
 
-export default HeaderComponent;
+export default ArticlePage;
