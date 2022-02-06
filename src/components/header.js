@@ -5,9 +5,7 @@ import '../App.css';
 
 const HeaderComponent = () => {
   return (
-    <div>
-       <h1>This is a header</h1>
-    </div>
+    <div className="header" />
   );
 }
 
