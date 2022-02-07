@@ -1,12 +1,12 @@
 import './App.css';
-import ArticlePage from './pages/Article';
+import OptionPage from './pages/OptionPage';
 import HeaderComponent from './components/header';
 
 function App() {
   return (
     <div className="App">
       <HeaderComponent />
-      <ArticlePage />
+      <OptionPage />
     </div>
   );
 }
