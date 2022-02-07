@@ -41,6 +41,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .paintingBackground {
@@ -50,6 +51,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .blackOverlay {
@@ -73,7 +75,7 @@
 }
 
 .textcenter {
-    height: 30vh; /* box for text centering */
+    height: 40vh; /* box for text centering */
 }
 
 .header {
