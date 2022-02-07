@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 const HeaderComponent = () => {
+  const navigate = useNavigate();
   return (
-    <div className="header" />
+    <div className="header" onClick={() => navigate(-1)}> 
+    <h1>Back</h1>
+    </div>
   );
 }
 

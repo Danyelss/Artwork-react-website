@@ -1,7 +1,8 @@
 import React from "react";
-import { Navigate, useNavigate, useParams, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import '../App.css';
 import ImageDisplay from "../components/fourImagesOptionScreen";
+import HeaderComponent from "../components/header";
 
 const OptionPage = () => {
 
@@ -11,7 +12,7 @@ const OptionPage = () => {
 
     return (
         <div className="optionAbsolute">
-
+            <HeaderComponent/>
             <Link to={pathToArtworks}>
                 <div className="zoomS optionAbsoluteTop">
                     <ImageDisplay section={section} />

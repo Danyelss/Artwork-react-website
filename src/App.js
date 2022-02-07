@@ -15,17 +15,17 @@ import {
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
 
-          <Route path="/option/:section" element={<OptionPage />} />
+        <Route path="/option/:section" element={<OptionPage />} />
 
-          <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/:type" element={<TestPage />} />
 
-          <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/:type" element={<TestPage />} />
 
-        </Routes>
-      </BrowserRouter>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
@@ -56,12 +56,15 @@ export default App;
 */
 
 const TestPage = () => {
-  let {section, type} = useParams();
+  let { section, type } = useParams();
   return (
-    <div className='homepageText'>
-      <h1>{section}</h1>
-      <h1>{type}</h1>
+    <div>
+      <HeaderComponent />
+      <div className='homepageText'>
+        <h1>{section}</h1>
+        <h1>{type}</h1>
 
+      </div>
     </div>
   );
 }
