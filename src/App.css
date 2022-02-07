@@ -1,5 +1,32 @@
-.App {
-    text-align: center;
+.imageOptionContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageOption {
+    width: 25%;
+    height: 33vh;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.optionCenteredTop {
+    position: absolute;
+    top: 23vh;
+    left: 50%;
+    transform: translate(-50%, +50%);
+}
+
+.optionCenteredDown {
+    position: fixed;
+    top: 63vh;
+    left: 50%;
+    transform: translate(-50%, +50%);
+}
+
+.optionSpacer {
+    height: 8vh;
+}
     background-color: #35363a;
 }
 
