@@ -1,3 +1,13 @@
+.App {
+    text-align: center;
+    background-color: #35363a;
+  }
+
+.optionAbsolute {
+    position: absolute;
+    width: 100%;
+}
+
 .imageOptionContainer {
     display: flex;
     flex-direction: row;
@@ -10,24 +20,28 @@
     opacity: 0.4;
 }
 
+.optionText {
+    color: white;
+    font-size: 100px;
+}
+
 .optionCenteredTop {
-    position: absolute;
-    top: 23vh;
+    position: fixed;
+    top: 24%;
     left: 50%;
-    transform: translate(-50%, +50%);
+    transform: translate(-50%, 0);
 }
 
 .optionCenteredDown {
     position: fixed;
-    top: 63vh;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, +50%);
 }
 
 .optionSpacer {
-    height: 8vh;
-}
-    background-color: #35363a;
+    height: 7vh;
+    
 }
 
 .App-header {
