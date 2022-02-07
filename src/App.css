@@ -1,43 +1,3 @@
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .imageOptionContainer {
     display: flex;
     flex-direction: row;
@@ -67,3 +27,95 @@
 .optionSpacer {
     height: 8vh;
 }
+    background-color: #35363a;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-color: transparent;
+}
+
+
+.splitScreen {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+.topPane {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bottomPane {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.metaloBackground {
+    background-image: url(../src/assets/metalo.jpg);
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.paintingBackground {
+    background-image: url(../src/assets/painting.jpg);
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.blackOverlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.52;
+}
+
+.box {
+    height: 100vh;
+    text-align: center;
+}
+
+.homepageText {
+    color: white;
+    font-size: 6vw;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.textcenter {
+    height: 40vh; /* box for text centering */
+}
+
+.header {
+    background-color: #35363a;
+    height: 7vh;
+    text-align: center;
+}
+
+.zoom {
+    transition: transform .1s; /* Animation */
+  }
+  
+  .zoom:hover { 
+    cursor: pointer;  /* change cursor */
+    transform: scale(1.2); /* increase size */
+  }
