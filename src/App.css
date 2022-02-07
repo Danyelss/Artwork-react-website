@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.imageOptionContainer {
+    display: flex;
+    flex-direction: row;
+    height: 400vh;
+}
+.imageOption {
+    width: 25%;
+    height: 10%;
+    object-fit: cover;
+}

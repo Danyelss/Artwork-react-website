@@ -15,8 +15,9 @@ const OptionPage = () => {
 
     return (
         <div className="">
-            <div className="" onClick={optionClick("painting")}></div>
-            <div className="" onClick={optionClick("metalo")}><ImageDisplay /></div>
+            <div className="" onClick={optionClick("painting")}><ImageDisplay section="painting" /></div>
+            <div className="App-header"/>
+            <div className="" onClick={optionClick("metalo")}><ImageDisplay section="metalo" /></div>
         </div>
     );
 }
