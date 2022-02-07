@@ -1,31 +1,30 @@
 import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate, useParams, Link } from "react-router-dom";
 import '../App.css';
 import ImageDisplay from "../components/fourImagesOptionScreen";
 
 const OptionPage = () => {
 
-    //const navigate = useNavigate();
-
-
-    const optionClick = (option) => {
-        //navigate("/option/"+option); <ImageDisplay section="painting" />
-
-    }
+    let { section } = useParams();
+    let pathToArtworks = "/" + section + "/artworks";
+    let pathToArticles = "/" + section + "/articles";
 
     return (
         <div className="optionAbsolute">
 
-            <div className="zoomS optionAbsoluteTop" onClick={optionClick("painting")}>
-                <ImageDisplay section="painting" />
-                <div className="optionCenteredTop optionText">LUCRĂRI</div>
-            </div>
+            <Link to={pathToArtworks}>
+                <div className="zoomS optionAbsoluteTop">
+                    <ImageDisplay section={section} />
+                    <div className="optionCenteredTop optionText">LUCRĂRI</div>
+                </div>
+            </Link>
 
-
-            <div className="zoomS optionAbsoluteBottom" onClick={optionClick("metalo")}>
-                <ImageDisplay section="metalo" />
-                <div className="optionCenteredDown optionText">ARTICOLE</div>
-            </div>
+            <Link to={pathToArticles}>
+                <div className="zoomS optionAbsoluteBottom">
+                    <ImageDisplay section={section} />
+                    <div className="optionCenteredDown optionText">ARTICOLE</div>
+                </div>
+            </Link>
 
 
         </div>
