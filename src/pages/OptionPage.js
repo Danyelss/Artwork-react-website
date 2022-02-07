@@ -9,15 +9,19 @@ const OptionPage = () => {
 
 
     const optionClick = (option) => {
-        //navigate("/option/"+option);
+        //navigate("/option/"+option); <ImageDisplay section="painting" />
 
     }
 
     return (
         <div className="">
-            <div className="" onClick={optionClick("painting")}><ImageDisplay section="painting" /></div>
-            <div className="App-header"/>
-            <div className="" onClick={optionClick("metalo")}><ImageDisplay section="metalo" /></div>
+            <div onClick={optionClick("painting")}>
+                <ImageDisplay section="painting" />
+            </div>
+            <h1>compot</h1>
+            <div onClick={optionClick("metalo")}>
+                <ImageDisplay section="metalo" />
+            </div>
         </div>
     );
 }

@@ -40,10 +40,10 @@
 .imageOptionContainer {
     display: flex;
     flex-direction: row;
-    height: 400vh;
 }
+
 .imageOption {
     width: 25%;
-    height: 10%;
+    height: 33vh;
     object-fit: cover;
 }
