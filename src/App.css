@@ -1,11 +1,25 @@
 .App {
     text-align: center;
     background-color: #35363a;
-  }
+}
 
 .optionAbsolute {
+    overflow: hidden;
+    width: 95%;
+}
+
+.optionAbsoluteTop {
     position: absolute;
-    width: 100%;
+    width: 90%;
+    left: 5%;
+    top: 13vh;
+}
+
+.optionAbsoluteBottom {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 53vh;
 }
 
 .imageOptionContainer {
@@ -18,30 +32,32 @@
     height: 33vh;
     object-fit: cover;
     opacity: 0.4;
+    overflow: -moz-hidden-unscrollable
 }
 
 .optionText {
     color: white;
-    font-size: 100px;
+    font-size: 11vh;
+    text-shadow: 5px 5px black;
 }
 
 .optionCenteredTop {
-    position: fixed;
-    top: 24%;
+    position: inherit;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .optionCenteredDown {
-    position: fixed;
-    top: 57%;
+    position: inherit;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, +50%);
 }
 
 .optionSpacer {
     height: 7vh;
-    
+
 }
 
 .App-header {
@@ -55,7 +71,6 @@
     color: white;
     background-color: transparent;
 }
-
 
 .splitScreen {
     overflow: hidden;
@@ -116,7 +131,8 @@
 }
 
 .textcenter {
-    height: 40vh; /* box for text centering */
+    height: 40vh;
+    /* box for text centering */
 }
 
 .header {
@@ -126,10 +142,25 @@
 }
 
 .zoom {
-    transition: transform .1s; /* Animation */
-  }
-  
-  .zoom:hover { 
-    cursor: pointer;  /* change cursor */
-    transform: scale(1.2); /* increase size */
-  }
+    transition: transform .1s;
+    /* Animation */
+}
+
+.zoom:hover {
+    cursor: pointer;
+    /* change cursor */
+    transform: scale(1.2);
+    /* increase size */
+}
+
+.zoomS {
+    transition: transform .1s;
+    /* Animation */
+}
+
+.zoomS:hover {
+    cursor: pointer;
+    /* change cursor */
+    transform: scale(1.1);
+    /* increase size */
+}

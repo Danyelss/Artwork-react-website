@@ -15,18 +15,19 @@ const OptionPage = () => {
 
     return (
         <div className="optionAbsolute">
-                        <div className="optionSpacer">   </div>
 
-            <div onClick={optionClick("painting")}>
+            <div className="zoomS optionAbsoluteTop" onClick={optionClick("painting")}>
                 <ImageDisplay section="painting" />
                 <div className="optionCenteredTop optionText">LUCRĂRI</div>
             </div>
-            <div className="optionSpacer">   </div>
-            <div onClick={optionClick("metalo")}>
+
+
+            <div className="zoomS optionAbsoluteBottom" onClick={optionClick("metalo")}>
                 <ImageDisplay section="metalo" />
                 <div className="optionCenteredDown optionText">ARTICOLE</div>
-
             </div>
+
+
         </div>
     );
 }
