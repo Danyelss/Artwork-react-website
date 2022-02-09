@@ -164,3 +164,16 @@
     transform: scale(1.1);
     /* increase size */
 }
+
+.galleryContainer {
+    flex-wrap: wrap;
+    width: 99vw;
+    display: block;
+    margin-left: 1vw;
+    margin-right: auto;
+}
+
+.galleryImage {
+    width: auto;
+    height: 50vh;
+}

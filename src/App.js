@@ -3,6 +3,7 @@ import OptionPage from './pages/OptionPage';
 import ArticlePage from './pages/Article';
 import HomePage from './pages/Homepage';
 import HeaderComponent from './components/header';
+import Gallery from './pages/Gallery';
 
 import {
   Routes,
@@ -20,9 +21,9 @@ function App() {
 
         <Route path="/option/:section" element={<OptionPage />} />
 
-        <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/artworks" element={<Gallery />} />
 
-        <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/articles" element={<TestPage />} />
 
       </Routes>
     </BrowserRouter>
