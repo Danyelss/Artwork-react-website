@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { getListRandomImages } from '../utils/imageExtraction';
+import { useParams, Link } from "react-router-dom";
 
 const DynamicGallery = ({ photos }) => {
 
   let imageList = [];
+  let { section } = useParams();
   photos.forEach((url, index) => {
     imageList.push(
-      <Link to="/">
-    <img key={index} src={url} className="galleryImage zoomS"/>
-    </Link>
+      <Link to={"/" + section + "/artworks/" + index}>
+        <img key={index} src={url} className="galleryImage zoomS" />
+      </Link>
     )
   });
 
   return (
     <div className="galleryContainer">
-        {imageList}
+      {imageList}
     </div>
   );
 }

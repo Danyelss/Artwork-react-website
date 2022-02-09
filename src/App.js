@@ -25,6 +25,8 @@ function App() {
 
         <Route path="/:section/articles" element={<TestPage />} />
 
+        <Route path="/:section/:type/:id" element={<TestPage />} />
+
       </Routes>
     </BrowserRouter>
   );
@@ -57,13 +59,14 @@ export default App;
 */
 
 const TestPage = () => {
-  let { section, type } = useParams();
+  let { section, type, id } = useParams();
   return (
     <div>
       <HeaderComponent />
       <div className='homepageText'>
-        <h1>{section}</h1>
-        <h1>{type}</h1>
+        <p>{section}</p>
+        <p>{type}</p>
+        <p>{id}</p>
 
       </div>
     </div>

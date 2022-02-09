@@ -19,7 +19,6 @@ const Gallery = () => {
     return (
         <div>
             <HeaderComponent />
-            mue
             <DynamicGallery photos={list} />
         </div>
     );
