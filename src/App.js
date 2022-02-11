@@ -35,6 +35,9 @@ function App() {
 export default App;
 
 /*
+        <Route path="/:section/:type/:id" element={<TestPage />} />
+
+
 <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />

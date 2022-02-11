@@ -170,7 +170,7 @@
     display: flex;
     width: 96vw;
     margin-left: 2vw;
-    margin-right: auto;    
+    margin-right: 2vw;
     justify-content: center;
 }
 
@@ -179,4 +179,125 @@
     height: 40vh;
     padding: 5px;
     justify-content: center;
+}
+
+.backOfModal {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalImageSize {
+    height: 80vh;
+    width: auto;
+}
+
+@media (min-width:320px) {
+    .modalImageSize {
+        height: auto;
+        width: 80vw;
+    }
+    .insideModalDescription {
+        color: white;
+        font-size: 2vh;
+        margin-left: 1vw;
+        width:60vw;
+    }
+}
+
+@media (min-width:481px) {
+    .modalImageSize {
+        height: auto;
+        width: 80vw;
+    }
+    .insideModalDescription {
+        color: white;
+        font-size: 2vh;
+        margin-left: 1vw;
+        width:60vw;
+    }
+}
+
+@media (min-width:641px) {
+    .modalImageSize {
+        height: auto;
+        width: 80vw;
+    }
+    .insideModalDescription {
+        color: white;
+        font-size: 2vh;
+        margin-left: 1vw;
+        width:60vw;
+    }
+}
+
+@media (min-width:961px) {
+    .modalImageSize {
+        height: auto;
+        width: 80vw;
+    }
+    .insideModalDescription {
+        color: white;
+        font-size: 2vh;
+        margin-left: 1vw;
+        width:60vw;
+    }
+}
+
+@media (min-width:1025px) {
+    .modalImageSize {
+        height: auto;
+        width: 80vw;
+    }
+}
+
+@media (min-width:1281px) {
+    .modalImageSize {
+        height: 80vh;
+        width: auto;
+    }
+}
+
+.insideModalContainer {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.insideModalDescription {
+    color: white;
+    font-size: 2vh;
+    margin-left: 1vw;
+    width:40vh;
+}
+
+.insideModalButton {
+	border-radius:42px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+
+	font-family:Arial;
+
+	font-size:2vh;
+
+	padding:6px 76px;
+
+	text-decoration:none;
+
+}
+
+.insideModalButton:hover {
+
+	background-color:#ffffff;
+
+}
+
+.insideModalButton:active {
+
+	position:relative;
+
+	top:1px;
+
 }
