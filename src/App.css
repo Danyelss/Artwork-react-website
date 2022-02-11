@@ -167,15 +167,16 @@
 
 .galleryContainer {
     flex-wrap: wrap;
+    display: flex;
     width: 96vw;
-    display: block;
     margin-left: 2vw;
-    margin-right: auto;
-    align-content: space-evenly;
+    margin-right: auto;    
+    justify-content: center;
 }
 
 .galleryImage {
     width: auto;
     height: 40vh;
     padding: 5px;
+    justify-content: center;
 }

@@ -19,7 +19,7 @@ const Gallery = () => {
     return (
         <div>
             <HeaderComponent />
-            <DynamicGallery photos={list} />
+            <DynamicGallery photos={list} lastIsFirst={true} />
         </div>
     );
 }

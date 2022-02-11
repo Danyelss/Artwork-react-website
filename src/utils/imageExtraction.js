@@ -4,7 +4,7 @@ export const getListRandomImages = (section) => {
 
     file.forEach(element => {
         element.urls.forEach(item => {
-            list.push(item);
+            list.push(item.url);
         });
     });
 
