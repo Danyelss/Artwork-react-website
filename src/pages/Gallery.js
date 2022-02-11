@@ -9,7 +9,6 @@ import { getListWithAllTheImages } from '../utils/imageExtraction';
 const Gallery = () => {
 
     let { section } = useParams();
-    console.log(section);
     let pathToArtworks = "/" + section + "/artworks";
 
     let list = getListWithAllTheImages(section);
