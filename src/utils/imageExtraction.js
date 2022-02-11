@@ -4,7 +4,7 @@ export const getListRandomImages = (section) => {
 
     file.forEach(element => {
         element.urls.forEach(item => {
-            list.push(item);
+            list.push(item.url);
         });
     });
 
@@ -21,4 +21,26 @@ export const getListRandomImages = (section) => {
     randomList.push(list[arr[3]]);
 
     return randomList;
+}
+
+export const getListWithAllTheImages = (section) => {
+    let list = [];
+    let file = require('../database-' + section + '/data.json');
+
+    file.forEach(element => {
+        element.urls.forEach(item => {
+            list.push(item);
+        });
+    });
+
+    return list;
+}
+
+export const getListWithImagesForId = (section, id) => {
+    let list = [];
+    let file = require('../database-' + section + '/data.json');
+
+    list = file[id].urls;
+
+    return list;
 }

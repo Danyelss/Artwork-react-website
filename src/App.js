@@ -3,6 +3,7 @@ import OptionPage from './pages/OptionPage';
 import ArticlePage from './pages/Article';
 import HomePage from './pages/Homepage';
 import HeaderComponent from './components/header';
+import Gallery from './pages/Gallery';
 
 import {
   Routes,
@@ -20,9 +21,11 @@ function App() {
 
         <Route path="/option/:section" element={<OptionPage />} />
 
-        <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/artworks" element={<Gallery />} />
 
-        <Route path="/:section/:type" element={<TestPage />} />
+        <Route path="/:section/articles" element={<TestPage />} />
+
+        <Route path="/:section/:type/:id" element={<TestPage />} />
 
       </Routes>
     </BrowserRouter>
@@ -56,13 +59,14 @@ export default App;
 */
 
 const TestPage = () => {
-  let { section, type } = useParams();
+  let { section, type, id } = useParams();
   return (
     <div>
       <HeaderComponent />
       <div className='homepageText'>
-        <h1>{section}</h1>
-        <h1>{type}</h1>
+        <p>{section}</p>
+        <p>{type}</p>
+        <p>{id}</p>
 
       </div>
     </div>
