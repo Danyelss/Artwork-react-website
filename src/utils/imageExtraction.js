@@ -44,3 +44,14 @@ export const getListWithImagesForId = (section, id) => {
 
     return list;
 }
+
+
+export const getImageForErrorPage = () => {
+    let file = require('../assets/errorImages.json');
+
+    var r = Math.floor(Math.random() * (file.length -1));
+
+    console.log(r);
+
+    return file[r];
+}

@@ -12,6 +12,7 @@ import {
   Navigate,
   useParams,
 } from "react-router-dom";
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Route path="/:section/articles" element={<TestPage />} />
 
         <Route path="/:section/:type/:id" element={<TestPage />} />
+
+        <Route path="/404" element={<ErrorPage />} />
+
+        <Route path="*" element={<Navigate replace to="/404" />} />
 
       </Routes>
     </BrowserRouter>
