@@ -10,7 +10,8 @@ export const getListRandomImages = (section) => {
 
     var arr = [];
     while (arr.length < 4) {
-        var r = Math.floor(Math.random() * (list.length -1)) + 1;
+        var r = Math.floor(Math.random() * (list.length -1));
+        console.log(r);
         if (arr.indexOf(r) === -1) arr.push(r);
     }
     
