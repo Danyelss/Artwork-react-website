@@ -10,7 +10,8 @@ const ErrorPage = () => {
     return (
         <div>
             <HeaderComponent/>
-            <img src={url}/>
+            <img className="fill" src={url}/>
+            <h1 className="errorPageText">404 <br/> Page Not Found</h1>
         </div>
     );
 }

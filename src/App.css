@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: #35363a;
+    background-color: black;
 }
 
 .optionAbsolute {
@@ -31,7 +31,7 @@
     width: 25%;
     height: 33vh;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.52;
     overflow: -moz-hidden-unscrollable
 }
 
@@ -61,7 +61,7 @@
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@
 }
 
 .header {
-    background-color: #35363a;
+    background-color: white;
     height: 7vh;
     text-align: center;
 }
@@ -300,4 +300,28 @@
 
 	top:1px;
 
+}
+
+.fill {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+    opacity: 0.52;
+}
+
+.errorPageText {
+    color: white;
+    font-size: 6vw;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    position: absolute;
+    left: 27vw;
+    top: 25vh;
+    text-align: center;
 }
