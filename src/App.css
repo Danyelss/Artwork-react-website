@@ -38,6 +38,9 @@
 .optionText {
     color: white;
     font-size: 11vh;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
     text-shadow: 5px 5px black;
 }
 
@@ -58,18 +61,6 @@
 .optionSpacer {
     height: 7vh;
 
-}
-
-.App-header {
-    background-color: black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    background-color: transparent;
 }
 
 .splitScreen {
@@ -128,6 +119,7 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    text-shadow: 3px 3px black;
 }
 
 .textcenter {
@@ -139,6 +131,8 @@
     background-color: white;
     height: 7vh;
     text-align: center;
+    width: 100vw;
+    left: 100px;
 }
 
 .zoom {
@@ -190,11 +184,12 @@
 .modalImageSize {
     height: 80vh;
     width: auto;
+    object-fit: cover;
 }
 
 @media (min-width:320px) {
     .modalImageSize {
-        height: auto;
+        height: 50vh;
         width: 80vw;
     }
     .insideModalDescription {
@@ -207,7 +202,7 @@
 
 @media (min-width:481px) {
     .modalImageSize {
-        height: auto;
+        height: 50vh;
         width: 80vw;
     }
     .insideModalDescription {
@@ -220,8 +215,10 @@
 
 @media (min-width:641px) {
     .modalImageSize {
-        height: auto;
+        height: 70vh;
         width: 80vw;
+        object-fit: cover;
+
     }
     .insideModalDescription {
         color: white;
@@ -233,7 +230,7 @@
 
 @media (min-width:961px) {
     .modalImageSize {
-        height: auto;
+        height: 70vh;
         width: 80vw;
     }
     .insideModalDescription {
@@ -246,14 +243,16 @@
 
 @media (min-width:1025px) {
     .modalImageSize {
-        height: auto;
+        object-fit: cover;
+
+        height: 70vh;
         width: 80vw;
     }
 }
 
 @media (min-width:1281px) {
     .modalImageSize {
-        height: 80vh;
+        height: 70vh;
         width: auto;
     }
 }
@@ -324,4 +323,5 @@
     left: 27vw;
     top: 25vh;
     text-align: center;
+    text-shadow: 3px 3px black;
 }

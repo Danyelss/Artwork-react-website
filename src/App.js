@@ -1,5 +1,6 @@
 import './App.css';
 import OptionPage from './pages/OptionPage';
+import UploadPage from './pages/UploadPage';
 import ArticlePage from './pages/Article';
 import HomePage from './pages/Homepage';
 import HeaderComponent from './components/header';
@@ -32,9 +33,25 @@ function App() {
 
         <Route path="*" element={<Navigate replace to="/404" />} />
 
+        <Route
+            path="/upload"
+            element={
+              <PrivateRoute>
+                <UploadPage />
+              </PrivateRoute>
+            }
+          />
+
       </Routes>
     </BrowserRouter>
   );
+}
+
+function PrivateRoute({ children }) {
+  const auth = true;
+  //getAccessToken();
+
+  return auth ? children : <Navigate to="/" />;
 }
 
 export default App;
