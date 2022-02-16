@@ -10,7 +10,8 @@ export const getListRandomImages = (section) => {
 
     var arr = [];
     while (arr.length < 4) {
-        var r = Math.floor(Math.random() * (list.length -1)) + 1;
+        var r = Math.floor(Math.random() * (list.length -1));
+        console.log(r);
         if (arr.indexOf(r) === -1) arr.push(r);
     }
     
@@ -43,4 +44,15 @@ export const getListWithImagesForId = (section, id) => {
     list = file[id].urls;
 
     return list;
+}
+
+
+export const getImageForErrorPage = () => {
+    let file = require('../assets/errorImages.json');
+
+    var r = Math.floor(Math.random() * (file.length -1));
+
+    console.log(r);
+
+    return file[r];
 }
