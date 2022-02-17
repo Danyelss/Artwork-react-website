@@ -192,11 +192,12 @@
         height: 50vh;
         width: 80vw;
     }
+
     .insideModalDescription {
         color: white;
         font-size: 2vh;
         margin-left: 1vw;
-        width:60vw;
+        width: 60vw;
     }
 }
 
@@ -205,11 +206,12 @@
         height: 50vh;
         width: 80vw;
     }
+
     .insideModalDescription {
         color: white;
         font-size: 2vh;
         margin-left: 1vw;
-        width:60vw;
+        width: 60vw;
     }
 }
 
@@ -220,11 +222,12 @@
         object-fit: cover;
 
     }
+
     .insideModalDescription {
         color: white;
         font-size: 2vh;
         margin-left: 1vw;
-        width:60vw;
+        width: 60vw;
     }
 }
 
@@ -233,11 +236,12 @@
         height: 70vh;
         width: 80vw;
     }
+
     .insideModalDescription {
         color: white;
         font-size: 2vh;
         margin-left: 1vw;
-        width:60vw;
+        width: 60vw;
     }
 }
 
@@ -267,37 +271,37 @@
     color: white;
     font-size: 2vh;
     margin-left: 1vw;
-    width:40vh;
+    width: 40vh;
 }
 
 .insideModalButton {
-	border-radius:42px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
+    border-radius: 42px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
 
-	font-family:Arial;
+    font-family: Arial;
 
-	font-size:2vh;
+    font-size: 2vh;
 
-	padding:6px 76px;
+    padding: 6px 76px;
 
-	text-decoration:none;
+    text-decoration: none;
 
 }
 
 .insideModalButton:hover {
 
-	background-color:#ffffff;
+    background-color: #ffffff;
 
 }
 
 .insideModalButton:active {
 
-	position:relative;
+    position: relative;
 
-	top:1px;
+    top: 1px;
 
 }
 
@@ -324,4 +328,66 @@
     top: 25vh;
     text-align: center;
     text-shadow: 3px 3px black;
+}
+
+.uploadContainer {
+    left: auto;
+    width: 90vw;
+    height: 90vh;
+    padding-top: 1vh;
+    display: flexbox;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #26004d
+}
+
+.uploadInput {
+    width: 100%;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 3vh;
+    overflow: auto;
+}
+
+.uploadInput {
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 3vh;
+    overflow: auto;
+}
+
+.uploadTitleBox {
+    width: 100%;
+    height: 7vh;
+}
+
+.uploadContextBox {
+    width: 100%;
+    height: 20vh;
+}
+
+.uploadButton {
+    margin-left: 74vw;
+    width: 15vw;
+    height: 8vh;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 3vw;
+}
+
+.UploadText {
+    color: white;
+    font-size: 3vh;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-shadow: 3px 3px black;
+}
+
+.uploadSpacer {
+    width: 1vw;
+    height: 1vh;
 }
