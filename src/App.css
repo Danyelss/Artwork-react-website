@@ -333,7 +333,7 @@
 .uploadContainer {
     left: auto;
     width: 90vw;
-    height: 90vh;
+    height: 100%;
     padding-top: 1vh;
     display: flexbox;
     flex-wrap: wrap;
@@ -390,4 +390,45 @@
 .uploadSpacer {
     width: 1vw;
     height: 1vh;
+}
+
+.uploadUrlBox {
+    width: 45%;
+    height: 5vh;
+
+}
+
+.urlFieldsContainer {
+    display:inline-flex;
+}
+
+.urlElementContainer {
+    display:flex;
+}
+
+.urlButton {
+    margin-left: 36.7vw;
+    width: 8vw;
+    height: 8vh;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 3vw;
+}
+
+.uploadUrlsView {
+    color: white;
+    font-size: 3vh;
+    vertical-align: middle;
+    line-height: normal;
+    text-shadow: 3px 3px black;
+}
+
+.deleteButton {
+    width: 8vw;
+    height: 3vh;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-size: 1vw;
 }
