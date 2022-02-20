@@ -30,9 +30,17 @@ const DynamicGallery = ({ photos, lastIsFirst }) => {
     photos.forEach((photo, index) => {
       imageList.push(
         <div>
-          <Link to={"/" + section + "/artworks/" + photo.id}>
-            <img key={index} src={photo.url} className="galleryImage zoomS" />
-          </Link>
+          <Popup trigger={<img key={index} src={photo.url} className="galleryImage zoomS" />}
+            modal>
+            {close => (
+              <button onClick={() => {
+                console.log('modal closed ');
+                close();
+              }} className="backOfModal">
+                <ModalImage photo={photo}></ModalImage>
+              </button>
+            )}
+          </Popup>
         </div>
       )
     });

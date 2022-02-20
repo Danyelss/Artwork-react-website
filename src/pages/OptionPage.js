@@ -38,7 +38,7 @@ const OptionPage = () => {
             </div>
         )
     } else {
-        return (<Navigate to="/home" />);
+        return (<Navigate to="/404" />);
     }
 }
 
