@@ -18,7 +18,7 @@ const Gallery = () => {
     return (
         <div>
             <HeaderComponent />
-            <DynamicGallery photos={list} lastIsFirst={true} />
+            <DynamicGallery photos={list} lastIsFirst={true} fromArticle={false}/>
         </div>
     );
 }

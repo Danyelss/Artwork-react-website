@@ -131,7 +131,7 @@
     background-color: white;
     height: 7vh;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     left: 100px;
 }
 
@@ -436,8 +436,23 @@
 .articleTitle {
     color: white;
     text-align: center;
+    font-size: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    width: 90%;
+    margin: auto;
 }
 
 .articleBody {
     color: white;
+    font-size: 4vh;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2vh;
+}
+
+.articleBox {
+    width: 90%;
+    margin: auto;
+    background-color: #14141f
 }

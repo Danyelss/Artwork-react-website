@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import Popup from 'reactjs-popup';
 import ModalImage from './modalImage';
 
-const DynamicGallery = ({ photos, lastIsFirst }) => {
+const DynamicGallery = ({ photos, lastIsFirst, fromArticle }) => {
 
   let imageList = [];
   let { section } = useParams();
@@ -19,7 +19,7 @@ const DynamicGallery = ({ photos, lastIsFirst }) => {
                 console.log('modal closed ');
                 close();
               }} className="backOfModal">
-                <ModalImage photo={photo}></ModalImage>
+                <ModalImage photo={photo} fromArticle={fromArticle}></ModalImage>
               </button>
             )}
           </Popup>
@@ -37,7 +37,7 @@ const DynamicGallery = ({ photos, lastIsFirst }) => {
                 console.log('modal closed ');
                 close();
               }} className="backOfModal">
-                <ModalImage photo={photo}></ModalImage>
+                <ModalImage photo={photo} fromArticle={fromArticle}></ModalImage>
               </button>
             )}
           </Popup>
