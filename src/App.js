@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/:section/articles" element={<TestPage />} />
 
-        <Route path="/:section/:type/:id" element={<TestPage />} />
+        <Route path="/:section/articles/:id" element={<ArticlePage />} />
 
         <Route path="/404" element={<ErrorPage />} />
 
