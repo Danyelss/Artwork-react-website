@@ -432,3 +432,12 @@
     color: white;
     font-size: 1vw;
 }
+
+.articleTitle {
+    color: white;
+    text-align: center;
+}
+
+.articleBody {
+    color: white;
+}

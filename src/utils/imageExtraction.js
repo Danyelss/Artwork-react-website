@@ -37,13 +37,16 @@ export const getListWithAllTheImages = (section) => {
     return list;
 }
 
-export const getListWithImagesForId = (section, id) => {
+export const getArticleInfoById= (section, id) => {
     let list = [];
     let file = require('../database-' + section + '/data.json');
 
-    list = file[id].urls;
+    let article = file[id];
+    let title = article.title;
+    let body = article.body;
+    list = article.urls;
 
-    return list;
+    return {title, body, list};
 }
 
 
