@@ -456,3 +456,36 @@
     margin: auto;
     background-color: #14141f
 }
+
+.articleTeaser {
+    transition: transform .1s;
+    width: 90%;
+    background-color: #14141f;
+    margin: auto;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.articleTeaser:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.articleTeaserImage {
+    width: auto;
+    height: 30vh;
+    margin: 1vh;
+    padding-right: 10vh;
+}
+
+.articleTeaserText {
+    color: white;
+    font-size: 4vh;
+    height: 22vh;
+    overflow: hidden;
+}
+
+.articleTeaserLink {
+    text-decoration: none;
+}
+
