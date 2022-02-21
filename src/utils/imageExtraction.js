@@ -1,4 +1,3 @@
-import { fireEvent } from '@testing-library/react';
 
 export const getListRandomImages = (section) => {
     let list = [];
