@@ -1,3 +1,4 @@
+
 export const getListRandomImages = (section) => {
     let list = [];
     let file = require('../database-' + section + '/data.json');
@@ -37,7 +38,7 @@ export const getListWithAllTheImages = (section) => {
     return list;
 }
 
-export const getArticleInfoById= (section, id) => {
+export const getArticleInfoById = (section, id) => {
     let list = [];
     let file = require('../database-' + section + '/data.json');
 
@@ -58,4 +59,18 @@ export const getImageForErrorPage = () => {
     console.log(r);
 
     return file[r];
+}
+
+export const getArticleTeasersInfo = (section) => {
+    let list = [];
+    let file = require('../database-' + section + '/data.json');
+
+    file.forEach(element => {
+        let id = element.id;
+        let imageUsed = element.urls[0];
+        let body = element.body;
+        list.push({id, imageUsed, body});
+    });
+
+    return list;
 }

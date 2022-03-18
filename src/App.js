@@ -14,6 +14,7 @@ import {
   useParams,
 } from "react-router-dom";
 import ErrorPage from './pages/ErrorPage';
+import ArticleListPage from './pages/ArticleListPage';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 
         <Route path="/:section/artworks" element={<Gallery />} />
 
-        <Route path="/:section/articles" element={<TestPage />} />
+        <Route path="/:section/articles" element={<ArticleListPage />} />
 
         <Route path="/:section/articles/:id" element={<ArticlePage />} />
 
