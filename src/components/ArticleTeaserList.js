@@ -2,8 +2,8 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { getArticleTeasersInfo } from '../utils/imageExtraction';
 
-const ArticleTeaserList = ({section}) => {
-    
+const ArticleTeaserList = ({ section }) => {
+
     let jsxList = [];
     let teasersInfoList = getArticleTeasersInfo(section);
 
@@ -12,16 +12,25 @@ const ArticleTeaserList = ({section}) => {
     teasersInfoList.forEach(article => {
         let pathToArticle = "/" + section + "/articles/" + article.id;
         jsxList.push(
-            <Link to={pathToArticle} className="articleTeaserLink">
-                <div className = "articleTeaser">
-                    <img src = {article.imageUsed.url} className="articleTeaserImage"></img>
-                    <p className="articleTeaserText">{article.body}</p>
-                </div>
-            </Link>
+            <div className="articleTeaser">
+                <Link to={pathToArticle} className="articleTeaserLink">
+
+                    <div className="articleListText">
+                        <div className="imageBoxArticle"></div>
+                        <div className="textBoxArticle">
+                            <p className="articleTeaserText">{article.title.substring(0, 50) + "..."}</p>
+                            <p className="articleTeaserText">{article.body.substring(0, 200) + "..."}</p>
+                        </div>
+                    </div>
+                </Link>
+
+            </div>
         )
     });
 
-    return(
+    //<div src={article.imageUsed.url} className="articleTeaserImage"></div>
+
+    return (
         jsxList
     )
 }

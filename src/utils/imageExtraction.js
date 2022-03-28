@@ -69,7 +69,8 @@ export const getArticleTeasersInfo = (section) => {
         let id = element.id;
         let imageUsed = element.urls[0];
         let body = element.body;
-        list.push({id, imageUsed, body});
+        let title = element.title;
+        list.push({id, imageUsed, title, body});
     });
 
     return list;

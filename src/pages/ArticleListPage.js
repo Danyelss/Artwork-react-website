@@ -8,12 +8,8 @@ import ArticleTeaserList from "../components/ArticleTeaserList";
 const ArticleListPage = () => {
 
     let { section } = useParams();
-    let teasersInfoList = getArticleTeasersInfo(section)
-   
-    console.log(teasersInfoList);
-    
-    
-
+    let teasersInfoList = getArticleTeasersInfo(section);    
+  
     return (
       <div>
         <HeaderComponent />
