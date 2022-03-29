@@ -7,19 +7,17 @@ import ArticleTeaserList from "../components/ArticleTeaserList";
 
 const ArticleListPage = () => {
 
-    let { section } = useParams();
-    let teasersInfoList = getArticleTeasersInfo(section)
-   
-    console.log(teasersInfoList);
-    
-    
+  let { section } = useParams();
+  let teasersInfoList = getArticleTeasersInfo(section);
 
-    return (
-      <div>
-        <HeaderComponent />
+  return (
+    <div>
+      <HeaderComponent />
+      <div className="centerMid">
         <ArticleTeaserList section={section} />
       </div>
-    );
-  }
-  
-  export default ArticleListPage;
+    </div>
+  );
+}
+
+export default ArticleListPage;
