@@ -16,10 +16,12 @@ const ArticleTeaserList = ({ section }) => {
                 <Link to={pathToArticle} className="articleTeaserLink">
 
                     <div className="articleListText">
-                        <div className="imageBoxArticle"></div>
+                        <div className="imageBoxArticle">
+                            <img src={article.imageUsed.url} className="articleTeaserImage"></img>
+                        </div>
                         <div className="textBoxArticle">
-                            <p className="articleTeaserText">{article.title.substring(0, 50) + "..."}</p>
-                            <p className="articleTeaserText">{article.body.substring(0, 200) + "..."}</p>
+                            <p className="articleTeaserText">{article.title.substring(0, 100) + "..."}</p>
+                            <p className="articleTeaserText">{article.body.substring(0, 300) + "..."}</p>
                         </div>
                     </div>
                 </Link>

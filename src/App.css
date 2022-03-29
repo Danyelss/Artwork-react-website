@@ -459,7 +459,7 @@
 
 .articleTeaser {
     transition: transform .1s;
-    width: 90%;
+    width: 95%;
     height: 20vh;
     background-color: #14141f;
     margin-top: 2vh;
@@ -473,15 +473,18 @@
 }
 
 .articleTeaserImage {
-    width: 200px;
-    height: 200px;
+    height: 100%;
+    width: 30vw;
     margin-right: 1vw;
     padding-right: 10vh;
+    object-fit: cover;
+
+
 }
 
 .articleTeaserText {
     color: white;
-    font-size: 30px;
+    font-size: 1.7vw;
     overflow: hidden;
 }
 
@@ -491,7 +494,6 @@
 }
 
 .articleListText {
-    background-color: red;
     width: 100%;
     height: 100%;
     flex-wrap: nowrap;
@@ -500,13 +502,17 @@
 
 .imageBoxArticle {
     height: 100%;
-    width: 20vw;
+    width: 30vw;
     background-color: blue;
-
 }
 
 .textBoxArticle {
-    background-color: rgb(0, 255, 55);
     text-align: center;
+}
 
+.centerMid {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 5%;
 }
