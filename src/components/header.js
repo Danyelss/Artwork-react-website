@@ -10,7 +10,7 @@ const HeaderComponent = () => {
   return (
     <div onClick={() => navigate(-1)}>
       <div className="headerParent">
-        <img className="headerArrow" src={arrow}></img>
+        <img className="headerSquare" src={square}></img>
         <img className="headerSquare" src={square}></img>
         <img className="headerSquare" src={square}></img>
         <img className="headerSquare" src={square}></img>
@@ -23,5 +23,9 @@ const HeaderComponent = () => {
     </div>
   );
 }
+
+
+//        <img className="headerArrow" src={arrow}></img>
+
 
 export default HeaderComponent;
