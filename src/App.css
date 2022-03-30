@@ -6,20 +6,21 @@
 .optionAbsolute {
     overflow: hidden;
     width: 95%;
+    margin-top: 100px;
 }
 
 .optionAbsoluteTop {
     position: absolute;
     width: 90%;
     left: 5%;
-    top: 13vh;
+    top: 20vh;
 }
 
 .optionAbsoluteBottom {
     position: absolute;
     width: 90%;
     left: 5%;
-    top: 53vh;
+    top: 60vh;
 }
 
 .imageOptionContainer {
@@ -516,23 +517,16 @@
 }
 
 .headerSquare {
-    width: 100%;
-    height: 10vh;
-    background: url(../src/assets/square.png);
-    background-repeat: repeat-x;
-    background-size: 130px;
+    width: 12vw;
+    height: 170px;
     overflow: hidden;
-    background-position: left center;
+    object-fit: cover;
 }
 
 .headerArrow {
-    width: 6%;
-    height: 10vh;
-    background: url(../src/assets/arrow.png);
-    background-repeat: no-repeat;
-    background-size: 105px;
+    width: 170px;
+    height: 170px;
     overflow: hidden;
-    background-position: left center;
 }
 
 .headerParent {
