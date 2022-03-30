@@ -20,8 +20,8 @@ const ArticleTeaserList = ({ section }) => {
                             <img src={article.imageUsed.url} className="articleTeaserImage"></img>
                         </div>
                         <div className="textBoxArticle">
-                            <p className="articleTeaserText">{article.title.substring(0, 100) + "..."}</p>
-                            <p className="articleTeaserText">{article.body.substring(0, 300) + "..."}</p>
+                            <p className="articleTeaserText"><b>{article.title.substring(0, 100) + "..."}</b></p>
+                            <p className="articleTeaserText">{article.body.substring(0, 100) + "..."}</p>
                         </div>
                     </div>
                 </Link>

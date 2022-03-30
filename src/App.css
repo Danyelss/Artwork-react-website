@@ -460,7 +460,7 @@
 .articleTeaser {
     transition: transform .1s;
     width: 95%;
-    height: 20vh;
+    height: 25vh;
     background-color: #14141f;
     margin-top: 2vh;
     flex-wrap: nowrap;
@@ -478,13 +478,11 @@
     margin-right: 1vw;
     padding-right: 10vh;
     object-fit: cover;
-
-
 }
 
 .articleTeaserText {
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     overflow: hidden;
 }
 
