@@ -514,3 +514,28 @@
     justify-items: center;
     margin-left: 5%;
 }
+
+.headerSquare {
+    width: 100%;
+    height: 10vh;
+    background: url(../src/assets/square.png);
+    background-repeat: repeat-x;
+    background-size: 130px;
+    overflow: hidden;
+    background-position: left center;
+}
+
+.headerArrow {
+    width: 6%;
+    height: 10vh;
+    background: url(../src/assets/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 105px;
+    overflow: hidden;
+    background-position: left center;
+}
+
+.headerParent {
+    display: flex;
+    flex-wrap: nowrap;
+}
